@@ -23,6 +23,9 @@ namespace Sumator
         public MainWindow()
         {
             InitializeComponent();
+            ThreeBitAdder adder = new ThreeBitAdder(5,2);
+            adder.SetValues(false);
+            label1.Content = adder.Output();
         }
     }
 }
