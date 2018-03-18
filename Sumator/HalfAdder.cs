@@ -2,10 +2,10 @@
 {
     public class HalfAdder
     {
-        public bool A { get; private set; }
-        public bool B { get; private set; }
-        public bool C { get; private set; }
-        public bool S { get; private set; }
+        public bool A { get; set; }
+        public bool B { get; set; }
+        public bool C { get; set; }
+        public bool S { get; set; }
 
         public void SetValues(bool a, bool b)
         {

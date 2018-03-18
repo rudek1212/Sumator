@@ -2,28 +2,28 @@
 {
     public class Adder
     {
-        private readonly HalfAdder _hAdder1 = new HalfAdder();
-        private readonly HalfAdder _hAdder2 = new HalfAdder();
-        public bool A { get; set; }
-        public bool B { get; set; }
-        public bool C1 { get; set; }
-        public bool C { get; set; }
-        public bool S { get; set; }
+        public HalfAdder HAdder1 = new HalfAdder();
+        public HalfAdder HAdder2 = new HalfAdder();
+        public bool Ai { get; set; }
+        public bool Bi { get; set; }
+        public bool Ci1 { get; set; }
+        public bool Ci { get; set; }
+        public bool Si { get; set; }
 
         public void SetValues(bool a, bool b, bool c1)
         {
-            A = a;
-            B = b;
-            C1 = c1;
-            _hAdder1.SetValues(a, b);
-            _hAdder2.SetValues(_hAdder1.S, c1);
+            Ai = a;
+            Bi = b;
+            Ci1 = c1;
+            HAdder1.SetValues(a, b);
+            HAdder2.SetValues(HAdder1.S, c1);
             CalculateOutputs();
         }
 
         public void CalculateOutputs()
         {
-            S = _hAdder2.S;
-            C = LogicGates.Or(_hAdder1.C, _hAdder2.C);
+            Si = HAdder2.S;
+            Ci = LogicGates.Or(HAdder1.C, HAdder2.C);
         }
     }
 }

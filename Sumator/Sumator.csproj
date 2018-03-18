@@ -55,9 +55,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Adder.cs" />
+    <Compile Include="FourBitAdder.cs" />
     <Compile Include="HalfAdder.cs" />
-    <Compile Include="ThreeBitAdder.cs" />
-    <Compile Include="ToBinary.cs" />
+    <Compile Include="BinaryLogic.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -97,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="adder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\adder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

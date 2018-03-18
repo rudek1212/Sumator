@@ -1,0 +1,14 @@
+C:\Users\Rudni\source\repos\Sumator\Sumator\bin\Debug\Sumator.exe.config
+C:\Users\Rudni\source\repos\Sumator\Sumator\bin\Debug\Sumator.exe
+C:\Users\Rudni\source\repos\Sumator\Sumator\bin\Debug\Sumator.pdb
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.csprojResolveAssemblyReference.cache
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\MainWindow.g.cs
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\App.g.cs
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator_MarkupCompile.cache
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\MainWindow.baml
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.g.resources
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.Properties.Resources.resources
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.csproj.GenerateResource.Cache
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.csproj.CoreCompileInputs.cache
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.exe
+C:\Users\Rudni\source\repos\Sumator\Sumator\obj\Debug\Sumator.pdb

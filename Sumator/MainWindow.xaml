@@ -3,10 +3,94 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Sumator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="480.211" Width="724.473">
+        
     <Grid>
-        <Label HorizontalAlignment="Left" Height="113" Margin="108,98,0,0" VerticalAlignment="Top" Width="314" Name="label1"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="2" Grid.Row="1" Content="A3" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="3" Grid.Row="1" Content="B3" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="5" Grid.Row="1" Content="A2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="6" Grid.Row="1" Content="B2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="8" Grid.Row="1" Content="A1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="9" Grid.Row="1" Content="B1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="11" Grid.Row="1" Content="A0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="12" Grid.Row="1" Content="B0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label Grid.Column="14" Grid.Row="3" Content="C0" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label Grid.Column="0" Grid.Row="3" Content="C3" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="5" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center"  Content="S3"/>
+        <Label Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="5" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center"  Content="S2"/>
+        <Label Grid.Column="8" Grid.ColumnSpan="2" Grid.Row="5" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center"  Content="S1"/>
+        <Label Grid.Column="11" Grid.ColumnSpan="2" Grid.Row="5" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center"  Content="S0"/>
+        <Label Content="4-bit Adder" Grid.Column="6" Grid.ColumnSpan="3" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="ExtraBold"/>
+        <Label Grid.Column="1" Grid.Row="6" Content="TRUE - 1" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="7" Content="FALSE - 0" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="5" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Content="First" FontWeight="Bold"/>
+        <Label Grid.Column="5" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Second" FontWeight="Bold"/>
+        <Label Grid.Column="10" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Content="BIN" FontWeight="Bold"/>
+        <Label Grid.Column="10" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Left" Content="DEC" FontWeight="Bold"/>
+        <Label Grid.Row="6" Grid.Column="12" Grid.ColumnSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" Content="Created by:"/>
+        <Label Grid.Row="7" Grid.Column="12" Grid.ColumnSpan="3" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Content="Bartosz Rudnicki"/>
+        
+        <Button Grid.Column="2" Grid.Row="2" Width="15" Name="ButtonA3"/>
+        <Button Grid.Column="3" Grid.Row="2" Width="15" Name="ButtonB3"/>
+        <Button Grid.Column="5" Grid.Row="2" Width="15" Name="ButtonA2"/>
+        <Button Grid.Column="6" Grid.Row="2" Width="15" Name="ButtonB2"/>
+        <Button Grid.Column="8" Grid.Row="2" Width="15" Name="ButtonA1"/>
+        <Button Grid.Column="9" Grid.Row="2" Width="15" Name="ButtonB1"/>
+        <Button Grid.Column="11" Grid.Row="2" Width="15" Name="ButtonA0" />
+        <Button Grid.Column="12" Grid.Row="2" Width="15" Name="ButtonB0"/>
+        <Button Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="4" Width="15" Name="ButtonS3"/>
+        <Button Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="4" Width="15" Name="ButtonS2"/>
+        <Button Grid.Column="8" Grid.ColumnSpan="2" Grid.Row="4" Width="15" Name="ButtonS1"/>
+        <Button Grid.Column="11" Grid.ColumnSpan="2" Grid.Row="4" Width="15" Name="ButtonS0"/>
+        <Button Grid.Column="1" Grid.Row="3" Height="15" Name="ButtonC3"/>
+        <Button Grid.Column="4" Grid.Row="3" Height="15" Name="ButtonC2"/>
+        <Button Grid.Column="7" Grid.Row="3" Height="15" Name="ButtonC1"/>
+        <Button Grid.Column="10" Grid.Row="3" Height="15" Name="ButtonC0"/>
+        <Button Grid.Column="13" Grid.Row="3" Height="15" Name="ButtonFalseC"/>
+        <Button Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Margin="20 0 0 0" Height="15" Background="Lime"/>
+        <Button Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Margin="20 0 0 0" Height="15" Background="Red"/>
+        <Button Grid.Column="8" Grid.Row="6" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="5" Content="CALCULATE" FontWeight="Bold" Click="CalculateButtonClick"/>
+
+        <TextBox Grid.Row="6" Grid.Column="6" Margin="10 10 3 10" Name="BoxNumber0" KeyDown="BoxNumber0_KeyDown"/>
+        <TextBox Grid.Row="7" Grid.Column="6" Margin="10 10 3 10" Name="BoxNumber1" KeyDown="BoxNumber1_KeyDown"/>
+        <TextBox Grid.Row="6" Grid.Column="7" Margin="3 10 10 10" Name="BoxBinNumber0" IsEnabled="False" />
+        <TextBox Grid.Row="7" Grid.Column="7" Margin="3 10 10 10" Name="BoxBinNumber1" IsEnabled="False"/>
+        <TextBox Grid.Row="6" Grid.Column="11" Margin="3 10 10 10" Name="BoxOutputBin" IsEnabled="False"/>
+        <TextBox Grid.Row="7" Grid.Column="11" Margin="3 10 10 10" Name="BoxOutputDec" IsEnabled="False"/>
+
+        <Image Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Source="adder.png"/>
+        <Image Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2" Source="adder.png"/>
+        <Image Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Source="adder.png"/>
+        <Image Grid.Row="3" Grid.Column="11" Grid.ColumnSpan="2" Source="adder.png"/>
     </Grid>
 </Window>
